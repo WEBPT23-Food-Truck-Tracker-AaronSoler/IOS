@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CC3552A25394006007C32AC /* Diner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552925394006007C32AC /* Diner.swift */; };
 		7CEC84B925392A3500F9FB94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC84B825392A3500F9FB94 /* AppDelegate.swift */; };
 		7CEC84BB25392A3500F9FB94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */; };
 		7CEC84C025392A3500F9FB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84BE25392A3500F9FB94 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CC3552925394006007C32AC /* Diner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diner.swift; sourceTree = "<group>"; };
 		7CEC84B525392A3500F9FB94 /* iosFoodTruckTrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosFoodTruckTrackR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEC84B825392A3500F9FB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CC3552625393DE3007C32AC /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3552925394006007C32AC /* Diner.swift */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		7CC3552725393E2C007C32AC /* VIEW CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "VIEW CONTROLLERS";
+			sourceTree = "<group>";
+		};
+		7CC3552825393E44007C32AC /* MODEL CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MODEL CONTROLLERS";
+			sourceTree = "<group>";
+		};
 		7CEC84AC25392A3500F9FB94 = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +83,9 @@
 		7CEC84B725392A3500F9FB94 /* iosFoodTruckTrackR */ = {
 			isa = PBXGroup;
 			children = (
-				7CEC84D92539312700F9FB94 /* MODEL */,
-				7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */,
-				7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */,
+				7CC3552825393E44007C32AC /* MODEL CONTROLLERS */,
+				7CC3552725393E2C007C32AC /* VIEW CONTROLLERS */,
+				7CC3552625393DE3007C32AC /* MODELS */,
 				7CEC84D72539310800F9FB94 /* APPLICATION */,
 				7CEC84C125392A3800F9FB94 /* Assets.xcassets */,
 				7CEC84C625392A3800F9FB94 /* Info.plist */,
@@ -87,27 +111,6 @@
 				7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */,
 			);
 			path = APPLICATION;
-			sourceTree = "<group>";
-		};
-		7CEC84D92539312700F9FB94 /* MODEL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MODEL;
-			sourceTree = "<group>";
-		};
-		7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "VIEW CONTROLLERS";
-			sourceTree = "<group>";
-		};
-		7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "MODEL CONTROLLER";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CEC84B925392A3500F9FB94 /* AppDelegate.swift in Sources */,
+				7CC3552A25394006007C32AC /* Diner.swift in Sources */,
 				7CEC84BB25392A3500F9FB94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
