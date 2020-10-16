@@ -42,8 +42,7 @@
 		7CEC84AC25392A3500F9FB94 = {
 			isa = PBXGroup;
 			children = (
-				7CEC84D225392B6B00F9FB94 /* Bryson.storyboard */,
-				7CEC84CE25392B5400F9FB94 /* Ben.storyboard */,
+				7CEC84D6253930DD00F9FB94 /* STORYBOARDS */,
 				7CEC84B725392A3500F9FB94 /* iosFoodTruckTrackR */,
 				7CEC84B625392A3500F9FB94 /* Products */,
 			);
@@ -60,14 +59,55 @@
 		7CEC84B725392A3500F9FB94 /* iosFoodTruckTrackR */ = {
 			isa = PBXGroup;
 			children = (
-				7CEC84B825392A3500F9FB94 /* AppDelegate.swift */,
-				7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */,
-				7CEC84BE25392A3500F9FB94 /* Main.storyboard */,
+				7CEC84D92539312700F9FB94 /* MODEL */,
+				7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */,
+				7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */,
+				7CEC84D72539310800F9FB94 /* APPLICATION */,
 				7CEC84C125392A3800F9FB94 /* Assets.xcassets */,
-				7CEC84C325392A3800F9FB94 /* LaunchScreen.storyboard */,
 				7CEC84C625392A3800F9FB94 /* Info.plist */,
 			);
 			path = iosFoodTruckTrackR;
+			sourceTree = "<group>";
+		};
+		7CEC84D6253930DD00F9FB94 /* STORYBOARDS */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC84BE25392A3500F9FB94 /* Main.storyboard */,
+				7CEC84D225392B6B00F9FB94 /* Bryson.storyboard */,
+				7CEC84CE25392B5400F9FB94 /* Ben.storyboard */,
+				7CEC84C325392A3800F9FB94 /* LaunchScreen.storyboard */,
+			);
+			path = STORYBOARDS;
+			sourceTree = "<group>";
+		};
+		7CEC84D72539310800F9FB94 /* APPLICATION */ = {
+			isa = PBXGroup;
+			children = (
+				7CEC84B825392A3500F9FB94 /* AppDelegate.swift */,
+				7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */,
+			);
+			path = APPLICATION;
+			sourceTree = "<group>";
+		};
+		7CEC84D92539312700F9FB94 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "VIEW CONTROLLERS";
+			sourceTree = "<group>";
+		};
+		7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MODEL CONTROLLER";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
