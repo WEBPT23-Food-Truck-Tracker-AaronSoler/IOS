@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAX-WL-whQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oTR-kE-1Fg">
+            <objects>
+                <viewController id="xdG-8g-8xT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMf-fW-beO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xIj-SP-b86"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4f1-4r-huD">
+                        <barButtonItem key="leftBarButtonItem" title="Ben" id="Vxw-DC-VtB">
+                            <connections>
+                                <segue destination="UMK-z6-ObD" kind="show" id="0tO-ad-QuO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Bryson" id="1iy-v2-CqH">
+                            <connections>
+                                <segue destination="Q1K-VF-6ck" kind="show" id="rJU-2B-c3T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWG-h9-wqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="-154.01785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bdH-S3-pzC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GAX-WL-whQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GWF-sw-3zG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xdG-8g-8xT" kind="relationship" relationship="rootViewController" id="pyi-dJ-56f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70V-yy-kGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.463768115942031" y="-154.01785714285714"/>
+        </scene>
+        <!--Ben-->
+        <scene sceneID="EfT-za-Q28">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ben" id="UMK-z6-ObD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T5k-cR-myS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Euj-XZ-n6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135" y="-598"/>
+        </scene>
+        <!--Bryson-->
+        <scene sceneID="kCd-UF-kBO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bryson" id="Q1K-VF-6ck" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1FZ-iw-zST"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1e-8M-SUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
