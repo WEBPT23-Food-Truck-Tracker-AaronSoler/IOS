@@ -12,8 +12,8 @@
 		7CEC84C025392A3500F9FB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84BE25392A3500F9FB94 /* Main.storyboard */; };
 		7CEC84C225392A3800F9FB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84C125392A3800F9FB94 /* Assets.xcassets */; };
 		7CEC84C525392A3800F9FB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84C325392A3800F9FB94 /* LaunchScreen.storyboard */; };
-		7CEC84D025392B5400F9FB94 /* Ben.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84CE25392B5400F9FB94 /* Ben.storyboard */; };
-		7CEC84D325392B6B00F9FB94 /* Bryson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84D225392B6B00F9FB94 /* Bryson.storyboard */; };
+		7CEC84E32539378F00F9FB94 /* Ben.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84E12539378F00F9FB94 /* Ben.storyboard */; };
+		7CEC84E6253937A100F9FB94 /* Bryson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEC84E5253937A100F9FB94 /* Bryson.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		7CEC84C125392A3800F9FB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CEC84C425392A3800F9FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CEC84C625392A3800F9FB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CEC84CF25392B5400F9FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iosFoodTruckTrackR/Base.lproj/Ben.storyboard; sourceTree = "<group>"; };
-		7CEC84D225392B6B00F9FB94 /* Bryson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bryson.storyboard; sourceTree = "<group>"; };
+		7CEC84E22539378F00F9FB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = STORYBOARDS/Base.lproj/Ben.storyboard; sourceTree = "<group>"; };
+		7CEC84E5253937A100F9FB94 /* Bryson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bryson.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 		7CEC84D6253930DD00F9FB94 /* STORYBOARDS */ = {
 			isa = PBXGroup;
 			children = (
+				7CEC84E12539378F00F9FB94 /* Ben.storyboard */,
+				7CEC84E5253937A100F9FB94 /* Bryson.storyboard */,
 				7CEC84BE25392A3500F9FB94 /* Main.storyboard */,
-				7CEC84D225392B6B00F9FB94 /* Bryson.storyboard */,
-				7CEC84CE25392B5400F9FB94 /* Ben.storyboard */,
 				7CEC84C325392A3800F9FB94 /* LaunchScreen.storyboard */,
 			);
 			path = STORYBOARDS;
@@ -169,8 +169,8 @@
 			files = (
 				7CEC84C525392A3800F9FB94 /* LaunchScreen.storyboard in Resources */,
 				7CEC84C225392A3800F9FB94 /* Assets.xcassets in Resources */,
-				7CEC84D025392B5400F9FB94 /* Ben.storyboard in Resources */,
-				7CEC84D325392B6B00F9FB94 /* Bryson.storyboard in Resources */,
+				7CEC84E32539378F00F9FB94 /* Ben.storyboard in Resources */,
+				7CEC84E6253937A100F9FB94 /* Bryson.storyboard in Resources */,
 				7CEC84C025392A3500F9FB94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,10 +206,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		7CEC84CE25392B5400F9FB94 /* Ben.storyboard */ = {
+		7CEC84E12539378F00F9FB94 /* Ben.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7CEC84CF25392B5400F9FB94 /* Base */,
+				7CEC84E22539378F00F9FB94 /* Base */,
 			);
 			name = Ben.storyboard;
 			sourceTree = "<group>";
