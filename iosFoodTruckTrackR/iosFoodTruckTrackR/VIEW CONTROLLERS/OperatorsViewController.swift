@@ -23,7 +23,6 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         tableView.delegate = self
         tableView.dataSource = self
        
-      
         mapView.delegate = self
                 
     }
@@ -32,23 +31,24 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     
     //MARK: - FUNCTIONS
+
     
-//    func updateViews() {
-//        guard let foodtruckOperatorName = foodtruckOperator?.name else { return }
-//
-//    }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+            if segue.identifier == "operatorDetailSegue" {
+                if let detailVC = segue.destination as? OperatorDetailViewController,
+                   let indexPath = tableView.indexPathForSelectedRow {
+                    detailVC.mockController = mockController
+                    detailVC.foodtruckOperator = mockController.operatorArray[indexPath.row]
+                }
+            }
+        }
+        
+        
     }
-    */
 
-}
 
 extension OperatorsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,11 +56,15 @@ extension OperatorsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? OperatorTableViewCell else {
+            return UITableViewCell()
+        }
 
         let foodtruckOperator = mockController.operatorArray[indexPath.row]
-        cell.textLabel?.text = foodtruckOperator.name
-        cell.detailTextLabel?.text = "00.0 Miles Away"
+        cell.operatorNameLabel.text = foodtruckOperator.name
+        cell.operatorImage.image = UIImage(named: foodtruckOperator.truckImage)
+        
+       
         
         
         return cell

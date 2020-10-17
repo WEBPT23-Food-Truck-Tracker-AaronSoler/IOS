@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Customer Main View Controller-->
+        <!--My Favorite Foodtrucks-->
         <scene sceneID="BIW-Sf-77P">
             <objects>
                 <viewController id="rEY-Es-LyW" customClass="CustomerMainViewController" customModule="iosFoodTruckTrackR" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstItem="HjU-WR-m5h" firstAttribute="leading" secondItem="Nwf-bU-hcQ" secondAttribute="leading" constant="16" id="hkq-XQ-euH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zcf-SS-v9k"/>
+                    <navigationItem key="navigationItem" title="My Favorite Foodtrucks" id="zcf-SS-v9k"/>
                     <connections>
                         <segue destination="iv4-UT-gqc" kind="show" identifier="toMenu" id="zJo-Jn-BC5"/>
                     </connections>
@@ -127,8 +127,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hXc-fX-qPH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Food Map" image="location.png" id="5mb-3y-HCw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pFe-7W-wS6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pFe-7W-wS6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -10,11 +10,22 @@ import UIKit
 class OperatorDetailViewController: UIViewController {
 
     //MARK: - IBOUTLETS
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //MARK: - Properties
+    var foodtruckOperator: FoodtruckOperator?
+    var mockController: MockOperatorController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
+    }
+    
+    func updateViews() {
+        guard let foodtruckOperator = foodtruckOperator else { return }
+        nameLabel.text = foodtruckOperator.name
+        imageView.image = UIImage(named: foodtruckOperator.truckImage)
     }
     
 

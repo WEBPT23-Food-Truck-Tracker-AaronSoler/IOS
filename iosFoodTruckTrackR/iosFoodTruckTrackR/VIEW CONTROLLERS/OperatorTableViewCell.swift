@@ -17,13 +17,16 @@ class OperatorTableViewCell: UITableViewCell {
 
 // MARK: - IBOUTLETS
     
+    @IBOutlet weak var operatorImage: UIImageView!
     @IBOutlet weak var operatorNameLabel: UILabel!
     
 //MARK: - FUNCTIONS
     
     func updateViews() {
-        guard let foodtruckOperatorName = foodtruckOperator?.name else { return }
-        operatorNameLabel.text = foodtruckOperatorName
+        guard let foodtruckOperator = foodtruckOperator else { return }
+        operatorNameLabel.text = foodtruckOperator.name
+        operatorImage.image = UIImage(named: foodtruckOperator.truckImage)
+        
         
         
     }
