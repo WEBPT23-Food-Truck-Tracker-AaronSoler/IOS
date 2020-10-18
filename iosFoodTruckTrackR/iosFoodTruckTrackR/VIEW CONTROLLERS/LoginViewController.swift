@@ -8,28 +8,125 @@
 import UIKit
 
 enum LoginType {
-    case signUp, login
+    case signUp
+    case login
 }
 
 class LoginViewController: UIViewController {
     
+    //MARK: - IBOUTLETS
+    @IBOutlet weak var signUpSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    
     var foodtruckController : FoodtruckController?
-
+    var loginType = LoginType.signUp
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .red
+        
+        view.backgroundColor = .systemGray3
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: Action Handlers
+    @IBAction func buttonTapped(_ sender: Any) {
+        if let firstName = firstNameTextField.text,
+           !firstName.isEmpty,
+           let lastName = lastNameTextField.text,
+           !lastName.isEmpty,
+           let email = emailTextField.text,
+           !email.isEmpty,
+           let username = usernameTextField.text,
+           !username.isEmpty,
+           let password = passwordTextfield.text,
+           !password.isEmpty {
+            
+            let diner = Diner(email: email, username: username, password: password, firstName: firstName, lastName: lastName)
+            
+            switch loginType {
+            case .signUp:
+                foodtruckController?.signUp(with: diner, completion: { result in
+                    do {
+                        let success = try result.get()
+                        if success {
+                            DispatchQueue.main.async {
+                                print("sign up success")
+                                let alertController = UIAlertController(title: "Sign Up Successful", message: "Now, please login", preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true) {
+                                    self.loginType = .login
+                                    self.signUpSegmentedControl.selectedSegmentIndex = 1
+                                    self.signUpButton.setTitle("Login", for: .normal)
+                                }
+                            }
+                        }
+                    } catch {
+                        print("Error signing up: \(error)")
+                    }
+                })
+            case .login:
+                foodtruckController?.logIn(with: diner, completion: { (result) in
+                    do {
+                        let success = try result.get()
+                        
+                        if success {
+                            DispatchQueue.main.async {
+                                print("success!")
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                        }
+                    } catch {
+                        if let error = error as? FoodtruckController.NetworkError {
+                            switch error {
+                            case .failedSignIn:
+                                print("sign in failed")
+                            case .noData:
+                                print("no data recieved")
+                            case .noToken:
+                                print("no token")
+                            default:
+                                print("other error occurred")
+                            }
+                        }
+                    }
+                })
+            }
+        }
+        
+        
+        
+        
+        
     }
-    */
-
+    @IBAction func SignInTypeChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            loginType = .signUp
+            signUpButton.setTitle("Sign Up", for: .normal)
+        } else {
+            loginType = .login
+            signUpButton.setTitle("Login", for: .normal)
+            firstNameTextField.isHidden = true
+            lastNameTextField.isHidden = true
+            emailTextField.isHidden = true
+        }
+    }
+    
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

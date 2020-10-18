@@ -27,7 +27,7 @@ class FoodtruckController {
         case noRep
     }
     
-    var bearer: Bearer?
+    var token: Bearer?
     var userId: Int?
     
     private let baseURL = URL(string:"https://build-week-food-truck.herokuapp.com/")!
@@ -59,12 +59,12 @@ class FoodtruckController {
                     completion(.failure(.failedSignUp))
                     return
                 }
-                guard let response = response as? HTTPURLResponse,
-                      response.statusCode == 201 else {
-                    print("Sign up was unsuccessful")
-                    completion(.failure(.failedSignUp))
-                    return
-                }
+//                guard let response = response as? HTTPURLResponse,
+//                      response.statusCode == 201 else {
+//                    print("Sign up was unsuccessful")
+//                    completion(.failure(.failedSignUp))
+//                    return
+//                }
                 completion(.success(true))
 
             }
@@ -80,19 +80,20 @@ class FoodtruckController {
         var request = postRequest(for: loginURL)
         do {
             let jsonData = try JSONEncoder().encode(diner)
+            print(String(data: jsonData, encoding: .utf8)!)
             request.httpBody = jsonData
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
                 if let error = error {
                     print("Sign in failed with error: \(error)")
                     completion(.failure(.failedSignIn))
                     return
                 }
-                guard let response = response as? HTTPURLResponse,
-                    response.statusCode == 200 else {
-                        print("Sign in was unsuccessful")
-                        completion(.failure(.failedSignIn))
-                        return
-                }
+//                guard let response = response as? HTTPURLResponse,
+//                    response.statusCode == 200 else {
+//                        print("Sign in was unsuccessful")
+//                        completion(.failure(.failedSignIn))
+//                        return
+//                }
                 guard let data = data else {
                     print("Data was not received")
                     completion(.failure(.noData))
@@ -100,7 +101,7 @@ class FoodtruckController {
                 }
                 // Getting the bearer and UserID
                 do {
-                    self.bearer = try JSONDecoder().decode(Bearer.self, from: data)
+                    self.token = try JSONDecoder().decode(Bearer.self, from: data)
                     let userID = try JSONDecoder().decode(DinerIDGetter.self, from: data)
                     self.userId = userID.diner.id
                     completion(.success(true))

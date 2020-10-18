@@ -22,7 +22,7 @@ class FavoriteTrucksViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if foodtruckController.bearer == nil {
+        if foodtruckController.token == nil {
             performSegue(withIdentifier: "loginsegue", sender: self)
         }
       

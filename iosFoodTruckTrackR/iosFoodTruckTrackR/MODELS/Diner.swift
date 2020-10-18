@@ -10,16 +10,16 @@ import Foundation
 struct Diner: Codable {
     var id: Int?
     let email: String
-    let password: String
     let username: String
-    let firstName: String
-    let lastName: String
+    let password: String
+    let first_name: String
+    let last_name: String
     
-    init(email: String, password: String, username: String, firstName: String, lastName: String) {
+    init(email: String, username: String, password: String, firstName: String, lastName: String) {
         self.email = email
         self.username = username
         self.password = password
-        self.firstName = firstName
-        self.lastName = lastName
+        self.first_name = firstName
+        self.last_name = lastName
     }
 }
