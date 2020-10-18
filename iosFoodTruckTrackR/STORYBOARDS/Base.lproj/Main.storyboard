@@ -34,7 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCs-Mh-tvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="145.27736131934034"/>
+            <point key="canvasLocation" x="448" y="145"/>
         </scene>
         <!--Bryson-->
         <scene sceneID="2VQ-ts-CZ2">
@@ -44,7 +44,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqq-1Y-xB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="932"/>
+            <point key="canvasLocation" x="-175" y="595"/>
         </scene>
     </scenes>
     <resources>

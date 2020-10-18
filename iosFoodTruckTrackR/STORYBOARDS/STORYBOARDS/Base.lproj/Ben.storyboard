@@ -23,6 +23,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Favorite Foodtrucks" id="zcf-SS-v9k"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="iv4-UT-gqc" kind="show" identifier="toMenu" id="zJo-Jn-BC5"/>
                         <segue destination="kW2-i2-ZLg" kind="presentation" identifier="loginsegue" id="OMI-Z8-jeV"/>
@@ -177,11 +178,11 @@
             </objects>
             <point key="canvasLocation" x="2532" y="894.60269865067471"/>
         </scene>
-        <!--Food Map-->
+        <!--My Favorite Foodtrucks-->
         <scene sceneID="usy-wa-Ppu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hXc-fX-qPH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Food Map" image="location.png" id="5mb-3y-HCw"/>
+                    <tabBarItem key="tabBarItem" title="My Favorite Foodtrucks" image="star.fill" catalog="system" id="5mb-3y-HCw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pFe-7W-wS6">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -198,7 +199,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="location.png" width="25" height="25"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
