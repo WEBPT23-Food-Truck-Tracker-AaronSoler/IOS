@@ -12,11 +12,13 @@ enum LoginType {
 }
 
 class LoginViewController: UIViewController {
+    
+    var foodtruckController : FoodtruckController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
     }
     
 

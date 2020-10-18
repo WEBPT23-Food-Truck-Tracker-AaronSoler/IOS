@@ -12,7 +12,7 @@
         <scene sceneID="z4F-dj-nys">
             <objects>
                 <viewController id="TWG-Rp-x3B" customClass="OperatorsViewController" customModule="iosFoodTruckTrackR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="i0Z-ij-1uQ">
+                    <view key="view" contentMode="scaleToFill" id="i0Z-ij-1uQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0e-ja-9yq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671.0144927536232" y="930.80357142857133"/>
+            <point key="canvasLocation" x="2581.1594202898555" y="930.80357142857133"/>
         </scene>
         <!--Operator Detail View Controller-->
         <scene sceneID="EMp-jt-aM7">
@@ -145,12 +145,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCq-bj-lUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566.666666666667" y="930.80357142857133"/>
+            <point key="canvasLocation" x="3476.811594202899" y="930.80357142857133"/>
         </scene>
         <!--Find A Truck-->
         <scene sceneID="wyO-Oa-1lr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y1c-cU-07Q" userLabel="Find A Truck" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Find A Truck" image="magnifyingglass" catalog="system" id="XcX-tm-65F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lEz-m2-8pE">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -163,10 +164,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gm-OZ-Qpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.86956521739137" y="930.80357142857133"/>
+            <point key="canvasLocation" x="1671.0144927536232" y="930.80357142857133"/>
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

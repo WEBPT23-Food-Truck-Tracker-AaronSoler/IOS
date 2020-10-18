@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0FACDE253BBF3300B4EE67 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FACDD253BBF3300B4EE67 /* Bearer.swift */; };
+		7C0FACE1253BBF8A00B4EE67 /* DinerIDGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FACE0253BBF8A00B4EE67 /* DinerIDGetter.swift */; };
+		7C0FACE5253BE44A00B4EE67 /* FavoriteTrucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */; };
 		7C717E4A253B59D5004F4912 /* FoodtruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E49253B59D5004F4912 /* FoodtruckController.swift */; };
 		7C717E4D253B7034004F4912 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E4C253B7034004F4912 /* LoginViewController.swift */; };
 		7CC3552A25394006007C32AC /* FoodtruckOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552925394006007C32AC /* FoodtruckOperator.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0FACDD253BBF3300B4EE67 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		7C0FACE0253BBF8A00B4EE67 /* DinerIDGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinerIDGetter.swift; sourceTree = "<group>"; };
+		7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTrucksViewController.swift; sourceTree = "<group>"; };
 		7C717E49253B59D5004F4912 /* FoodtruckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckController.swift; sourceTree = "<group>"; };
 		7C717E4C253B7034004F4912 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CC3552925394006007C32AC /* FoodtruckOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckOperator.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			children = (
 				7CC3552925394006007C32AC /* FoodtruckOperator.swift */,
 				7CC3554025398098007C32AC /* Diner.swift */,
+				7C0FACDD253BBF3300B4EE67 /* Bearer.swift */,
+				7C0FACE0253BBF8A00B4EE67 /* DinerIDGetter.swift */,
 				7CC3553425395B08007C32AC /* MockJSON.swift */,
 			);
 			path = MODELS;
@@ -74,6 +82,7 @@
 				7CC3553025394B54007C32AC /* OperatorTableViewCell.swift */,
 				7CC3553A25396BBA007C32AC /* OperatorDetailViewController.swift */,
 				7C717E4C253B7034004F4912 /* LoginViewController.swift */,
+				7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */,
 			);
 			path = "VIEW CONTROLLERS";
 			sourceTree = "<group>";
@@ -213,12 +222,15 @@
 				7CC3554125398098007C32AC /* Diner.swift in Sources */,
 				7CEC84B925392A3500F9FB94 /* AppDelegate.swift in Sources */,
 				7CC3552A25394006007C32AC /* FoodtruckOperator.swift in Sources */,
+				7C0FACE5253BE44A00B4EE67 /* FavoriteTrucksViewController.swift in Sources */,
 				7CC3553125394B54007C32AC /* OperatorTableViewCell.swift in Sources */,
 				7CC3553525395B08007C32AC /* MockJSON.swift in Sources */,
 				7CC3552E25394B27007C32AC /* OperatorsViewController.swift in Sources */,
 				7C717E4A253B59D5004F4912 /* FoodtruckController.swift in Sources */,
+				7C0FACDE253BBF3300B4EE67 /* Bearer.swift in Sources */,
 				7CEC84BB25392A3500F9FB94 /* SceneDelegate.swift in Sources */,
 				7CC3553B25396BBA007C32AC /* OperatorDetailViewController.swift in Sources */,
+				7C0FACE1253BBF8A00B4EE67 /* DinerIDGetter.swift in Sources */,
 				7C717E4D253B7034004F4912 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

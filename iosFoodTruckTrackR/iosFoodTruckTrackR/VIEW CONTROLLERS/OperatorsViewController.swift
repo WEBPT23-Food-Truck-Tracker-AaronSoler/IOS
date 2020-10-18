@@ -12,6 +12,7 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     var mockController: MockOperatorController! = nil
     let locationManager = CLLocationManager()
     
+    
     //MARK: - IBOUTLETS
     
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +27,17 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         mapView.delegate = self
                 
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        if foodtruckController.bearer == nil {
+//            let destinationVC = LoginViewController()
+//            destinationVC.modalPresentationStyle = .fullScreen
+//            self.present(destinationVC, animated: true, completion: nil)
+//        }
+//
+//    }
     
     
     
@@ -44,6 +56,8 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
                     detailVC.foodtruckOperator = mockController.operatorArray[indexPath.row]
                 }
             }
+        
+            
         }
         
         
