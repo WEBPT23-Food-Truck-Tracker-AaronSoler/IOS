@@ -101,13 +101,12 @@ class FoodtruckController {
                 }
                 // Getting the bearer and UserID
                 do {
-<<<<<<< HEAD
+
                     self.token = try JSONDecoder().decode(Bearer.self, from: data)
-                    print("token is: \(String(describing: self.token))")
-=======
+                   
                     print("token is: \(String(describing: self.token))")
                     self.token = try JSONDecoder().decode(Bearer.self, from: data)
->>>>>>> Bryson
+
                     completion(.success(true))
                 } catch {
                     print("Error decoding bearer: \(error)")

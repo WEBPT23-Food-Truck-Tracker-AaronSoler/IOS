@@ -32,8 +32,7 @@ class LoginViewController: UIViewController {
         
         view.backgroundColor = .systemGray3
     }
-    
-<<<<<<< HEAD
+
     //MARK: Action Handlers
     @IBAction func buttonTapped(_ sender: Any) {
         if let firstName = firstNameTextField.text,
@@ -121,9 +120,9 @@ class LoginViewController: UIViewController {
     
     
     
-=======
 
->>>>>>> Bryson
+
+
     /*
      // MARK: - Navigation
      
