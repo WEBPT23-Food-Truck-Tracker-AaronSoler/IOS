@@ -27,7 +27,7 @@ class FoodtruckController {
         case noRep
     }
     
-    var bearer: Bearer?
+    var token: Bearer?
     var userId: Int?
     
     private let baseURL = URL(string:"https://build-week-food-truck.herokuapp.com/")!
@@ -80,6 +80,7 @@ class FoodtruckController {
         var request = postRequest(for: loginURL)
         do {
             let jsonData = try JSONEncoder().encode(diner)
+            print(String(data: jsonData, encoding: .utf8)!)
             request.httpBody = jsonData
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 if let error = error {
@@ -100,9 +101,8 @@ class FoodtruckController {
                 }
                 // Getting the bearer and UserID
                 do {
-                    self.bearer = try JSONDecoder().decode(Bearer.self, from: data)
-                    let userID = try JSONDecoder().decode(DinerIDGetter.self, from: data)
-                    self.userId = userID.diner.id
+                    self.token = try JSONDecoder().decode(Bearer.self, from: data)
+                    print("token is: \(String(describing: self.token))")
                     completion(.success(true))
                 } catch {
                     print("Error decoding bearer: \(error)")

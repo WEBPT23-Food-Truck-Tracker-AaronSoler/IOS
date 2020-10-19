@@ -15,14 +15,14 @@ class FavoriteTrucksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = . blue
+        view.backgroundColor = .systemTeal
 
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if foodtruckController.bearer == nil {
+        if foodtruckController.token == nil {
             performSegue(withIdentifier: "loginsegue", sender: self)
         }
       
