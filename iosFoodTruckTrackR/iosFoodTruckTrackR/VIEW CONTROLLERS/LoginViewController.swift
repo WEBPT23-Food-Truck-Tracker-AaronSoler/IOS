@@ -79,20 +79,38 @@ class LoginViewController: UIViewController {
                         if success {
                             DispatchQueue.main.async {
                                 print("success!")
-                                self.navigationController?.popViewController(animated: true)
+                                
                             }
                         }
                     } catch {
                         if let error = error as? FoodtruckController.NetworkError {
+                            DispatchQueue.main.async {
                             switch error {
                             case .failedSignIn:
                                 print("sign in failed")
+                                let alertController = UIAlertController(title: "Sign In Failed", message: "Please, try again", preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true)
                             case .noData:
                                 print("no data recieved")
+                                let alertController = UIAlertController(title: "No data recieved", message: "Please, try again", preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true)
                             case .noToken:
                                 print("no token")
+                                let alertController = UIAlertController(title: "No token", message: "Please, try again", preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true)
                             default:
                                 print("other error occurred")
+                                let alertController = UIAlertController(title: "Oops! Something went wrong!", message: "Please, try again", preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true)
+                            }
                             }
                         }
                     }
