@@ -59,12 +59,12 @@ class FoodtruckController {
                     completion(.failure(.failedSignUp))
                     return
                 }
-                guard let response = response as? HTTPURLResponse,
-                      response.statusCode == 201 else {
-                    print("Sign up was unsuccessful")
-                    completion(.failure(.failedSignUp))
-                    return
-                }
+//                guard let response = response as? HTTPURLResponse,
+//                      response.statusCode == 201 else {
+//                    print("Sign up was unsuccessful")
+//                    completion(.failure(.failedSignUp))
+//                    return
+//                }
                 completion(.success(true))
 
             }
@@ -82,18 +82,18 @@ class FoodtruckController {
             let jsonData = try JSONEncoder().encode(diner)
             print(String(data: jsonData, encoding: .utf8)!)
             request.httpBody = jsonData
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
                 if let error = error {
                     print("Sign in failed with error: \(error)")
                     completion(.failure(.failedSignIn))
                     return
                 }
-                guard let response = response as? HTTPURLResponse,
-                    response.statusCode == 200 else {
-                        print("Sign in was unsuccessful")
-                        completion(.failure(.failedSignIn))
-                        return
-                }
+//                guard let response = response as? HTTPURLResponse,
+//                    response.statusCode == 200 else {
+//                        print("Sign in was unsuccessful")
+//                        completion(.failure(.failedSignIn))
+//                        return
+//                }
                 guard let data = data else {
                     print("Data was not received")
                     completion(.failure(.noData))
@@ -101,8 +101,8 @@ class FoodtruckController {
                 }
                 // Getting the bearer and UserID
                 do {
-                    self.token = try JSONDecoder().decode(Bearer.self, from: data)
                     print("token is: \(String(describing: self.token))")
+                    self.token = try JSONDecoder().decode(Bearer.self, from: data)
                     completion(.success(true))
                 } catch {
                     print("Error decoding bearer: \(error)")
