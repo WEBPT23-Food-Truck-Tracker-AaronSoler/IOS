@@ -12,6 +12,7 @@ class OperatorDetailViewController: UIViewController {
     //MARK: - IBOUTLETS
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var addButton: UIButton!
     
     //MARK: - Properties
     var foodtruckOperator: FoodtruckOperator?
@@ -20,6 +21,8 @@ class OperatorDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+        addButton.layer.cornerRadius = 8
+        
     }
     
     func updateViews() {

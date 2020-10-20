@@ -31,5 +31,7 @@ class OperatorTableViewCell: UITableViewCell {
         
     }
     
-
+    @IBAction func addTapped(_ sender: Any) {
+    }
+    
 }
