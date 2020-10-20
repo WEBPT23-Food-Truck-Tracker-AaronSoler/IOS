@@ -7,6 +7,8 @@
 
 import UIKit
 import MapKit
+import CoreLocation
+
 class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewDelegate {
     
     var mockController: MockOperatorController! = nil
@@ -25,19 +27,19 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         tableView.dataSource = self
        
         mapView.delegate = self
+        setUpMap()
+        
                 
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        if foodtruckController.bearer == nil {
-//            let destinationVC = LoginViewController()
-//            destinationVC.modalPresentationStyle = .fullScreen
-//            self.present(destinationVC, animated: true, completion: nil)
-//        }
-//
-//    }
+    //MARK: - MAP
+    
+    func setUpMap() {
+        let mapCenter = CLLocationCoordinate2D(latitude: 37.79425, longitude: -122.403528)
+        let region = MKCoordinateRegion(center: mapCenter, latitudinalMeters: 500, longitudinalMeters: 500)
+        mapView.setRegion(region, animated: false)
+    }
+  
     
     
     

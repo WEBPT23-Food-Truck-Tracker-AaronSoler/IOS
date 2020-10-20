@@ -79,6 +79,15 @@ class LoginViewController: UIViewController {
                         if success {
                             DispatchQueue.main.async {
                                 print("success!")
+                                let alertController = UIAlertController(title: "Login Successful", message: nil, preferredStyle: .alert)
+                                let alertAction = UIAlertAction(title: "OK", style: .default) { (_) in
+                                    self.navigationController?.popViewController(animated: true)
+                                }
+                                alertController.addAction(alertAction)
+                                self.present(alertController, animated: true)
+                                
+                                
+                               
                                 
                             }
                         }

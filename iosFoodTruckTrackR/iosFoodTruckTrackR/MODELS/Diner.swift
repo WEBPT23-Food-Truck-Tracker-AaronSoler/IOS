@@ -9,11 +9,11 @@ import Foundation
 
 struct Diner: Codable {
     var id: Int?
-    let email: String
+    let email: String?
     let username: String
     let password: String
-    let first_name: String
-    let last_name: String
+    let first_name: String?
+    let last_name: String?
     
     init(email: String, username: String, password: String, firstName: String, lastName: String) {
         self.email = email
