@@ -12,6 +12,7 @@
 		7C0FACE5253BE44A00B4EE67 /* FavoriteTrucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */; };
 		7C717E4A253B59D5004F4912 /* FoodtruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E49253B59D5004F4912 /* FoodtruckController.swift */; };
 		7C717E4D253B7034004F4912 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E4C253B7034004F4912 /* LoginViewController.swift */; };
+		7C9A120F253EDC7500FA8556 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A120E253EDC7500FA8556 /* Landmark.swift */; };
 		7CC3552A25394006007C32AC /* FoodtruckOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552925394006007C32AC /* FoodtruckOperator.swift */; };
 		7CC3552E25394B27007C32AC /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552D25394B27007C32AC /* OperatorsViewController.swift */; };
 		7CC3553125394B54007C32AC /* OperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3553025394B54007C32AC /* OperatorTableViewCell.swift */; };
@@ -34,6 +35,7 @@
 		7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTrucksViewController.swift; sourceTree = "<group>"; };
 		7C717E49253B59D5004F4912 /* FoodtruckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckController.swift; sourceTree = "<group>"; };
 		7C717E4C253B7034004F4912 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C9A120E253EDC7500FA8556 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		7CC3552925394006007C32AC /* FoodtruckOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckOperator.swift; sourceTree = "<group>"; };
 		7CC3552D25394B27007C32AC /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
 		7CC3553025394B54007C32AC /* OperatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorTableViewCell.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				7C0FACDD253BBF3300B4EE67 /* Bearer.swift */,
 				7C0FACE0253BBF8A00B4EE67 /* DinerIDGetter.swift */,
 				7CC3553425395B08007C32AC /* MockJSON.swift */,
+				7C9A120E253EDC7500FA8556 /* Landmark.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				7CC3553B25396BBA007C32AC /* OperatorDetailViewController.swift in Sources */,
 				7C0FACE1253BBF8A00B4EE67 /* DinerIDGetter.swift in Sources */,
 				7C717E4D253B7034004F4912 /* LoginViewController.swift in Sources */,
+				7C9A120F253EDC7500FA8556 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

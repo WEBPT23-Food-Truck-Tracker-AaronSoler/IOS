@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 class FoodtruckOperator {
     let id: Int?
@@ -13,9 +14,8 @@ class FoodtruckOperator {
     let cuisineType: String?
     let location: String?
     let operatorId: Int?
-
     let name: String
-//    var isFavorite = false
+
     
     init(id: Int, name: String, truckImage: String, cuisineType: String, location: String, operatorId: Int) {
         self.id = id
@@ -24,6 +24,7 @@ class FoodtruckOperator {
         self.cuisineType = cuisineType
         self.location = location
         self.operatorId = operatorId
+        
     }
     
 }

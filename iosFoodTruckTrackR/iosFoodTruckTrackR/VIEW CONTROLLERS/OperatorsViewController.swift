@@ -27,27 +27,31 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         tableView.dataSource = self
        
         mapView.delegate = self
-        setUpMap()
+        //setUpGGBridge()
+        //setUpMap()
+        setupAnnotations()
         
                 
     }
     
     //MARK: - MAP
     
-    func setUpMap() {
-        let mapCenter = CLLocationCoordinate2D(latitude: 37.79425, longitude: -122.403528)
-        let region = MKCoordinateRegion(center: mapCenter, latitudinalMeters: 500, longitudinalMeters: 500)
+    func setupAnnotations() {
+        // DOGGIE DINER
+        let doggieDiner = CLLocationCoordinate2D(latitude: 37.735461, longitude: -122.502969)
+        let doggieDinerAnnotation = Landmark(coordinate: doggieDiner, name: "Corndogs On The Run, Bro!")
+        
+        let ggBridge = CLLocationCoordinate2D(latitude: 37.819722, longitude: -122.478611)
+        let ggBridgeAnnotation = Landmark(coordinate: ggBridge, name: "Worlds Best Taco Truck, Period")
+     
+        let span = MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
+        let region = MKCoordinateRegion(center: doggieDiner, span: span)
         mapView.setRegion(region, animated: false)
+       
+        mapView.showAnnotations([doggieDinerAnnotation, ggBridgeAnnotation], animated: true)
     }
-  
-    
-    
-    
-    
     //MARK: - FUNCTIONS
 
-    
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
