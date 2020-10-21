@@ -9,7 +9,7 @@ import UIKit
 
 class FavoriteTrucksViewController: UIViewController {
 
-    let foodtruckController = FoodtruckController()
+    let foodtruckController = FoodtruckTrackRController()
     
     
     override func viewDidLoad() {

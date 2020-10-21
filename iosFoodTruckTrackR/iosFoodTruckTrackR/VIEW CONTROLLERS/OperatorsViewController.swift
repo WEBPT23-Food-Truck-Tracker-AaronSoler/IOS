@@ -19,22 +19,26 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
+   
+    var currentLocationStr = "Current location"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mockController = MockOperatorController()
         tableView.delegate = self
         tableView.dataSource = self
-       
         mapView.delegate = self
         //setUpGGBridge()
         //setUpMap()
         setupAnnotations()
-        
-                
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+           //determineCurrentLocation()
+       }
+    
     //MARK: - MAP
+
     
     func setupAnnotations() {
         // DOGGIE DINER

@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     
     
-    var foodtruckController : FoodtruckController?
+    var foodtruckController : FoodtruckTrackRController?
     var loginType = LoginType.signUp
     
     override func viewDidLoad() {
@@ -69,6 +69,17 @@ class LoginViewController: UIViewController {
                         }
                     } catch {
                         print("Error signing up: \(error)")
+                        DispatchQueue.main.async {
+                            let alertController = UIAlertController(title: "Oops, something went wrong!", message: "Try Again", preferredStyle: .alert)
+                            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                            alertController.addAction(alertAction)
+                            self.present(alertController, animated: true) {
+                                self.loginType = .login
+                                self.signUpSegmentedControl.selectedSegmentIndex = 1
+                                self.signUpButton.setTitle("Login", for: .normal)
+                            }
+                        }
+                        
                     }
                 })
             case .login:
@@ -92,7 +103,7 @@ class LoginViewController: UIViewController {
                             }
                         }
                     } catch {
-                        if let error = error as? FoodtruckController.NetworkError {
+                        if let error = error as? FoodtruckTrackRController.NetworkError {
                             DispatchQueue.main.async {
                             switch error {
                             case .failedSignIn:

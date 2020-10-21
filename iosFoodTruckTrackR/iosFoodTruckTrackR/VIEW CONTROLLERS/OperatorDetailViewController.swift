@@ -13,6 +13,8 @@ class OperatorDetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var cuisineLabel: UILabel!
+    @IBOutlet weak var boxview: UIView!
     
     //MARK: - Properties
     var foodtruckOperator: FoodtruckOperator?
@@ -22,6 +24,8 @@ class OperatorDetailViewController: UIViewController {
         super.viewDidLoad()
         updateViews()
         addButton.layer.cornerRadius = 8
+        boxview.layer.cornerRadius = 8
+        
         
     }
     
@@ -29,6 +33,7 @@ class OperatorDetailViewController: UIViewController {
         guard let foodtruckOperator = foodtruckOperator else { return }
         nameLabel.text = foodtruckOperator.name
         imageView.image = UIImage(named: foodtruckOperator.truckImage)
+        cuisineLabel.text = foodtruckOperator.cuisineType
     }
     
 

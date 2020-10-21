@@ -10,7 +10,7 @@ import Foundation
 
 class Landmark: NSObject, MKAnnotation {
     
-    var foodtruckOperator: FoodtruckController?
+    var foodtruckOperator: FoodtruckTrackRController?
     var coordinate: CLLocationCoordinate2D
     let name: String
     

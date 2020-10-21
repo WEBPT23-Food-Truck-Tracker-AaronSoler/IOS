@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FoodtruckController {
+class FoodtruckTrackRController {
     
     enum HTTPMethod: String {
         case get = "GET"
