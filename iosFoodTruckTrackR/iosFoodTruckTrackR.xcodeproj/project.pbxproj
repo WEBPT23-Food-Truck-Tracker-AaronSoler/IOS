@@ -59,9 +59,6 @@
 		7CEC84B725392A3500F9FB94 /* iosFoodTruckTrackR */ = {
 			isa = PBXGroup;
 			children = (
-				7CEC84D92539312700F9FB94 /* MODEL */,
-				7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */,
-				7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */,
 				7CEC84D72539310800F9FB94 /* APPLICATION */,
 				7CEC84C125392A3800F9FB94 /* Assets.xcassets */,
 				7CEC84C625392A3800F9FB94 /* Info.plist */,
@@ -87,27 +84,6 @@
 				7CEC84BA25392A3500F9FB94 /* SceneDelegate.swift */,
 			);
 			path = APPLICATION;
-			sourceTree = "<group>";
-		};
-		7CEC84D92539312700F9FB94 /* MODEL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MODEL;
-			sourceTree = "<group>";
-		};
-		7CEC84DA2539313200F9FB94 /* VIEW CONTROLLERS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "VIEW CONTROLLERS";
-			sourceTree = "<group>";
-		};
-		7CEC84DC2539314900F9FB94 /* MODEL CONTROLLER */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "MODEL CONTROLLER";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
