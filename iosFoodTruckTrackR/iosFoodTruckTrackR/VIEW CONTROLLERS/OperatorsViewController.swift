@@ -13,6 +13,7 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     var mockController: MockOperatorController! = nil
     let locationManager = CLLocationManager()
+    var currentLocationStr = "Current location"
     
     
     //MARK: - IBOUTLETS
@@ -20,7 +21,7 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
    
-    var currentLocationStr = "Current location"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +43,17 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     func setupAnnotations() {
         // DOGGIE DINER
-        let doggieDiner = CLLocationCoordinate2D(latitude: 37.735461, longitude: -122.502969)
-        let doggieDinerAnnotation = Landmark(coordinate: doggieDiner, name: "Corndogs On The Run, Bro!")
+        let truck1 = CLLocationCoordinate2D(latitude: 37.735461, longitude: -122.502969)
+        let truck1Annotation = Landmark(coordinate: truck1, name: "Corndogs On The Run")
         
-        let ggBridge = CLLocationCoordinate2D(latitude: 37.819722, longitude: -122.478611)
-        let ggBridgeAnnotation = Landmark(coordinate: ggBridge, name: "Worlds Best Taco Truck, Period")
+        let truck2 = CLLocationCoordinate2D(latitude: 37.819722, longitude: -122.478611)
+        let truck2Annotation = Landmark(coordinate: truck2, name: "Worlds Best Taco Truck, Period.")
      
         let span = MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
-        let region = MKCoordinateRegion(center: doggieDiner, span: span)
+        let region = MKCoordinateRegion(center: truck2, span: span)
+        
         mapView.setRegion(region, animated: false)
-       
-        mapView.showAnnotations([doggieDinerAnnotation, ggBridgeAnnotation], animated: true)
+        mapView.showAnnotations([truck1Annotation, truck2Annotation], animated: true)
     }
     //MARK: - FUNCTIONS
 
@@ -87,10 +88,6 @@ extension OperatorsViewController: UITableViewDataSource {
         let foodtruckOperator = mockController.operatorArray[indexPath.row]
         cell.operatorNameLabel.text = foodtruckOperator.name
         cell.operatorImage.image = UIImage(named: foodtruckOperator.truckImage)
-        
-       
-        
-        
         return cell
     }
     

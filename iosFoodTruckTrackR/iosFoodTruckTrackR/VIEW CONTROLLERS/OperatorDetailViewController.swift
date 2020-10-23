@@ -27,12 +27,15 @@ class OperatorDetailViewController: UIViewController {
         boxview.layer.cornerRadius = 8
         
         
+        
+        
     }
     
     func updateViews() {
         guard let foodtruckOperator = foodtruckOperator else { return }
         nameLabel.text = foodtruckOperator.name
         imageView.image = UIImage(named: foodtruckOperator.truckImage)
+        imageView.layer.cornerRadius = 8
         cuisineLabel.text = foodtruckOperator.cuisineType
     }
     

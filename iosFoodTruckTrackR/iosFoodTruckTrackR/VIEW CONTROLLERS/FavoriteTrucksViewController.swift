@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MapKit
 
 class FavoriteTrucksViewController: UIViewController {
 
-    let foodtruckController = FoodtruckTrackRController()
+    let foodtruckController = LoginController()
     
     
     override func viewDidLoad() {

@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     
     
-    var foodtruckController : FoodtruckTrackRController?
+    var foodtruckController : LoginController?
     var loginType = LoginType.signUp
     
     override func viewDidLoad() {
@@ -103,7 +103,7 @@ class LoginViewController: UIViewController {
                             }
                         }
                     } catch {
-                        if let error = error as? FoodtruckTrackRController.NetworkError {
+                        if let error = error as? LoginController.NetworkError {
                             DispatchQueue.main.async {
                             switch error {
                             case .failedSignIn:
