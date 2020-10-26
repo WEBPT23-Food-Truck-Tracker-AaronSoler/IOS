@@ -114,19 +114,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="853-t5-R7p">
-                                <rect key="frame" x="12" y="93" width="390" height="542"/>
+                                <rect key="frame" x="12" y="30" width="390" height="590"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49R-oo-ewJ">
-                                        <rect key="frame" x="109.5" y="490" width="171" height="32"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="9"/>
-                                        <size key="titleShadowOffset" width="1" height="0.0"/>
-                                        <state key="normal" title="Add To Favorite Foodtrucks">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHO WHEELZ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k52-0b-2ep">
+                                        <rect key="frame" x="16" y="22" width="358" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWC-6f-T1b">
+                                        <rect key="frame" x="30" y="69" width="330" height="220.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220.5" id="bww-37-S4a"/>
+                                        </constraints>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lN2-ll-Dng">
                                         <rect key="frame" x="70" y="298" width="250" height="84.5"/>
                                         <subviews>
@@ -175,50 +176,40 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49R-oo-ewJ">
+                                        <rect key="frame" x="109.5" y="490" width="171" height="32"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="9"/>
+                                        <size key="titleShadowOffset" width="1" height="0.0"/>
+                                        <state key="normal" title="Add To Favorite Foodtrucks">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.083437152210000004" green="0.22229207819999999" blue="0.27718821170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="49R-oo-ewJ" firstAttribute="centerX" secondItem="853-t5-R7p" secondAttribute="centerX" id="i1H-dj-lf7"/>
-                                    <constraint firstAttribute="bottom" secondItem="49R-oo-ewJ" secondAttribute="bottom" constant="20" symbolic="YES" id="mSH-vN-wxN"/>
-                                    <constraint firstItem="lN2-ll-Dng" firstAttribute="top" secondItem="853-t5-R7p" secondAttribute="top" constant="298" id="mZM-Om-KtE"/>
-                                    <constraint firstItem="lN2-ll-Dng" firstAttribute="centerX" secondItem="853-t5-R7p" secondAttribute="centerX" id="nps-4V-khJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="49R-oo-ewJ" secondAttribute="bottom" constant="68" id="1Iw-sa-8QO"/>
+                                    <constraint firstItem="HWC-6f-T1b" firstAttribute="top" secondItem="k52-0b-2ep" secondAttribute="bottom" constant="15.5" id="5I7-ZL-mtE"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="centerX" secondItem="lN2-ll-Dng" secondAttribute="centerX" id="5qG-oX-Bwi"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="centerX" secondItem="853-t5-R7p" secondAttribute="centerX" id="AhD-Pj-TDU"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="leading" secondItem="853-t5-R7p" secondAttribute="leading" constant="16" id="F6x-rh-QAe"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="centerX" secondItem="HWC-6f-T1b" secondAttribute="centerX" id="Ymy-8d-4DB"/>
+                                    <constraint firstItem="lN2-ll-Dng" firstAttribute="top" secondItem="HWC-6f-T1b" secondAttribute="bottom" constant="8.5" id="biL-T7-0tW"/>
+                                    <constraint firstItem="HWC-6f-T1b" firstAttribute="leading" secondItem="853-t5-R7p" secondAttribute="leading" constant="30" id="cYh-Bc-ANj"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="top" secondItem="853-t5-R7p" secondAttribute="top" constant="22" id="z6h-hu-f6G"/>
+                                    <constraint firstItem="k52-0b-2ep" firstAttribute="centerX" secondItem="49R-oo-ewJ" secondAttribute="centerX" id="zPS-1D-wsj"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yli-JH-hdN">
-                                <rect key="frame" x="24" y="149" width="366" height="220.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c8r-BW-S0H">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="220.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHO WHEELZ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k52-0b-2ep">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="31.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWC-6f-T1b">
-                                                <rect key="frame" x="5" y="39.5" width="361" height="181"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="366" id="GfG-ld-COv"/>
-                                            <constraint firstItem="HWC-6f-T1b" firstAttribute="leading" secondItem="c8r-BW-S0H" secondAttribute="leading" constant="5" id="Nwq-KZ-UiK"/>
-                                            <constraint firstAttribute="height" constant="220.5" id="YNZ-Ev-hiv"/>
-                                            <constraint firstItem="k52-0b-2ep" firstAttribute="centerX" secondItem="c8r-BW-S0H" secondAttribute="centerX" id="wM2-2S-6kA"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dvm-UH-rPG"/>
                         <color key="backgroundColor" red="0.46659570929999999" green="0.59655499460000005" blue="0.59728795290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dvm-UH-rPG" firstAttribute="bottom" secondItem="853-t5-R7p" secondAttribute="bottom" constant="173" id="20q-8a-lUL"/>
-                            <constraint firstItem="853-t5-R7p" firstAttribute="centerX" secondItem="5Zd-iB-aWO" secondAttribute="centerX" id="3Cp-5y-uza"/>
-                            <constraint firstItem="853-t5-R7p" firstAttribute="leading" secondItem="dvm-UH-rPG" secondAttribute="leading" constant="12" id="D3n-3z-mcz"/>
-                            <constraint firstItem="853-t5-R7p" firstAttribute="top" secondItem="yli-JH-hdN" secondAttribute="bottom" constant="-276.5" id="Rc1-BE-oWM"/>
-                            <constraint firstItem="853-t5-R7p" firstAttribute="top" secondItem="dvm-UH-rPG" secondAttribute="top" constant="93" id="ZV5-bK-og2"/>
-                            <constraint firstItem="853-t5-R7p" firstAttribute="centerX" secondItem="yli-JH-hdN" secondAttribute="centerX" id="qdL-b4-su2"/>
+                            <constraint firstItem="dvm-UH-rPG" firstAttribute="bottom" secondItem="853-t5-R7p" secondAttribute="bottom" constant="188" id="8IE-fZ-f5p"/>
+                            <constraint firstItem="853-t5-R7p" firstAttribute="leading" secondItem="dvm-UH-rPG" secondAttribute="leading" constant="12" id="QPp-p7-zPL"/>
+                            <constraint firstItem="853-t5-R7p" firstAttribute="centerX" secondItem="5Zd-iB-aWO" secondAttribute="centerX" id="Zve-M8-NQA"/>
+                            <constraint firstItem="853-t5-R7p" firstAttribute="top" secondItem="dvm-UH-rPG" secondAttribute="top" constant="30" id="z0b-8a-VAl"/>
                         </constraints>
                     </view>
                     <connections>
