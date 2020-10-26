@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class OperatorDetailViewController: UIViewController {
 
@@ -19,6 +20,11 @@ class OperatorDetailViewController: UIViewController {
     //MARK: - Properties
     var foodtruckOperator: FoodtruckOperator?
     var mockController: MockOperatorController?
+    
+    let latitude = Double()
+    
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

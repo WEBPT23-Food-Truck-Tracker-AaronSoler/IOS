@@ -14,6 +14,8 @@ enum LoginType {
 
 class LoginViewController: UIViewController {
     
+    
+    
     //MARK: - IBOUTLETS
     @IBOutlet weak var signUpSegmentedControl: UISegmentedControl!
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -29,7 +31,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.backItem?.accessibilityLabel = String("loginViewController.backButton")
+        //self.navigationController.navigationBar.backItem.setAccessibilityLabel("your string")
+
         view.backgroundColor = .systemGray3
     }
 

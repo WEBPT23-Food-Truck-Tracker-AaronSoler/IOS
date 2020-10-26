@@ -9,7 +9,8 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
+class OperatorsViewController: UIViewController, UITableViewDelegate, CLLocationManagerDelegate {
+    
     
     var mockController: MockOperatorController! = nil
     var locationManager = CLLocationManager()
@@ -20,6 +21,8 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
+    
+    
    
     
     
@@ -44,16 +47,15 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
          let locationValue: CLLocationCoordinate2D = manager.location!.coordinate
          print("locations = \(locationValue.latitude)\(locationValue.longitude)")
         let userLocation = locations.last
-        let viewRegion = MKCoordinateRegion(center: userLocation!.coordinate, latitudinalMeters: 600, longitudinalMeters: 600 )
+        let viewRegion = MKCoordinateRegion(center: userLocation!.coordinate, latitudinalMeters: 8000, longitudinalMeters: 8000 )
         self.mapView.setRegion(viewRegion, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-           //determineCurrentLocation()
+           
        }
     
     //MARK: - MAP
-
     func zoomToUserLocation() {
         let locationManager = CLLocationManager()
             locationManager.delegate = self
@@ -91,7 +93,7 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         let truck3Annotation = Landmark(coordinate: truck3, name: "Pho Wheelz")
         
         let truck4 = CLLocationCoordinate2D(latitude: 36.158900, longitude: -115.303580)
-        let truck4Annotation = Landmark(coordinate: truck4, name: "Blazing Steaks")
+        let truck4Annotation = Landmark(coordinate: truck4, name: "Blazing Steak Truck")
      
         let span = MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
         let region = MKCoordinateRegion(center: truck2, span: span)
@@ -140,6 +142,20 @@ extension OperatorsViewController: UITableViewDataSource {
     }
     
     
+}
+extension OperatorsViewController: MKMapViewDelegate {
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView")
+//
+//        if annotationView == nil {
+//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "annotationView")
+//        }
+//        return annotationView
+//    }
+//
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//        print("the annotation was selected: \(String(describing: view.annotation?.title))")
+//    }
 }
 
 
