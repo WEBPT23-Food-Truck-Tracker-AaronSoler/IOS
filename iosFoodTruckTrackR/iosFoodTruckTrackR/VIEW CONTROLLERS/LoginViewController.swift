@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.backItem?.accessibilityLabel = String("loginViewController.backButton")
         //self.navigationController.navigationBar.backItem.setAccessibilityLabel("your string")
 
-        view.backgroundColor = .systemGray3
+        
     }
 
     //MARK: Action Handlers

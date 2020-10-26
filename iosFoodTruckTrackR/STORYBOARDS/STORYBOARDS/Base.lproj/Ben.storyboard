@@ -36,7 +36,6 @@
                     <navigationItem key="navigationItem" title="My Favorite Foodtrucks" id="zcf-SS-v9k"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="iv4-UT-gqc" kind="show" identifier="toMenu" id="zJo-Jn-BC5"/>
                         <segue destination="kW2-i2-ZLg" kind="show" identifier="loginsegue" id="OMI-Z8-jeV"/>
                     </connections>
                 </viewController>
@@ -52,76 +51,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOODTRUCK FINDR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-ph-Q0F">
-                                <rect key="frame" x="126.5" y="164.5" width="161" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tdm-1u-HeZ">
-                                <rect key="frame" x="107" y="213" width="200" height="255"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBu-HO-PF0">
+                                <rect key="frame" x="79" y="279" width="256.5" height="287.5"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uWK-5Z-qqC">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
-                                        <segments>
-                                            <segment title="Sign Up"/>
-                                            <segment title="Login"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="SignInTypeChanged:" destination="kW2-i2-ZLg" eventType="valueChanged" id="eNf-T6-TiE"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-B2-Zbp">
-                                        <rect key="frame" x="0.0" y="35" width="200" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-Bi-g7a">
-                                        <rect key="frame" x="0.0" y="73" width="200" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8o-nt-1za">
-                                        <rect key="frame" x="0.0" y="111" width="200" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMq-Lm-jRB">
-                                        <rect key="frame" x="0.0" y="149" width="200" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-Av-4al">
-                                        <rect key="frame" x="0.0" y="187" width="200" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhD-Cn-HkS">
-                                        <rect key="frame" x="0.0" y="225" width="200" height="30"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Sign Up"/>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="kW2-i2-ZLg" eventType="touchUpInside" id="tJX-MH-xtL"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOODTRUCK FINDR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-ph-Q0F">
+                                        <rect key="frame" x="0.0" y="0.0" width="256.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tdm-1u-HeZ">
+                                        <rect key="frame" x="28" y="32.5" width="200" height="255"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uWK-5Z-qqC">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                                                <segments>
+                                                    <segment title="Sign Up"/>
+                                                    <segment title="Login"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="SignInTypeChanged:" destination="kW2-i2-ZLg" eventType="valueChanged" id="eNf-T6-TiE"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-B2-Zbp">
+                                                <rect key="frame" x="0.0" y="35" width="200" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-Bi-g7a">
+                                                <rect key="frame" x="0.0" y="73" width="200" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8o-nt-1za">
+                                                <rect key="frame" x="0.0" y="111" width="200" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMq-Lm-jRB">
+                                                <rect key="frame" x="0.0" y="149" width="200" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-Av-4al">
+                                                <rect key="frame" x="0.0" y="187" width="200" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhD-Cn-HkS">
+                                                <rect key="frame" x="0.0" y="225" width="200" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="kW2-i2-ZLg" eventType="touchUpInside" id="tJX-MH-xtL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="bpL-sd-VIO"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="zZU-h0-fH4"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bD9-RY-iH3"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.46659570929999999" green="0.59655499460000005" blue="0.59728795290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tdm-1u-HeZ" firstAttribute="centerX" secondItem="cxj-cw-sb7" secondAttribute="centerX" id="8bg-R5-iLX"/>
-                            <constraint firstItem="tdm-1u-HeZ" firstAttribute="top" secondItem="KIf-ph-Q0F" secondAttribute="bottom" constant="28" id="PTx-yj-pNf"/>
-                            <constraint firstItem="KIf-ph-Q0F" firstAttribute="centerX" secondItem="cxj-cw-sb7" secondAttribute="centerX" id="V1H-dX-CfQ"/>
-                            <constraint firstItem="bD9-RY-iH3" firstAttribute="bottom" secondItem="tdm-1u-HeZ" secondAttribute="bottom" constant="345" id="d8g-GD-X3K"/>
+                            <constraint firstItem="tBu-HO-PF0" firstAttribute="top" secondItem="bD9-RY-iH3" secondAttribute="top" constant="191" id="cUv-cM-f9n"/>
+                            <constraint firstItem="tBu-HO-PF0" firstAttribute="centerX" secondItem="cxj-cw-sb7" secondAttribute="centerX" id="ktT-Hn-EOy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cWo-Pe-qsP">
@@ -141,86 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZD-Xp-2UW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2753.6231884057975" y="-404.46428571428572"/>
-        </scene>
-        <!--Menu List For Customer Table View Controller-->
-        <scene sceneID="rHI-lX-Xb1">
-            <objects>
-                <tableViewController id="iv4-UT-gqc" customClass="MenuListForCustomerTableViewController" customModule="iosFoodTruckTrackR" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="EAa-3M-Lzq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuItems" rowHeight="101" id="zbq-w3-JiT" customClass="CustomerMenuItemsCell" customModule="iosFoodTruckTrackR" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="101"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zbq-w3-JiT" id="Qaa-BU-Ixj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DR-ND-lgA">
-                                            <rect key="frame" x="186" y="19" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TS-qv-Gyw">
-                                            <rect key="frame" x="186" y="45" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="2DR-ND-lgA" firstAttribute="centerX" secondItem="Qaa-BU-Ixj" secondAttribute="centerX" id="KmM-Ov-vqq"/>
-                                        <constraint firstItem="2TS-qv-Gyw" firstAttribute="top" secondItem="2DR-ND-lgA" secondAttribute="bottom" constant="5" id="Rns-LA-Cjk"/>
-                                        <constraint firstItem="2TS-qv-Gyw" firstAttribute="centerX" secondItem="Qaa-BU-Ixj" secondAttribute="centerX" id="V6p-tD-rZM"/>
-                                        <constraint firstItem="2TS-qv-Gyw" firstAttribute="centerX" secondItem="Qaa-BU-Ixj" secondAttribute="centerX" id="nRX-64-OBI"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="2TS-qv-Gyw" secondAttribute="bottom" constant="27" id="pMj-rc-X8P"/>
-                                        <constraint firstItem="2DR-ND-lgA" firstAttribute="top" secondItem="Qaa-BU-Ixj" secondAttribute="topMargin" constant="11" id="sIc-wj-VeW"/>
-                                        <constraint firstItem="2DR-ND-lgA" firstAttribute="leading" secondItem="2TS-qv-Gyw" secondAttribute="leading" id="sWU-aH-dtQ"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="menuItem" destination="2DR-ND-lgA" id="fjQ-UC-99J"/>
-                                    <outlet property="price" destination="2TS-qv-Gyw" id="dS5-UU-HS7"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="iv4-UT-gqc" id="URg-eR-S5V"/>
-                            <outlet property="delegate" destination="iv4-UT-gqc" id="KQY-qq-7H2"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="qeX-GP-YoA"/>
-                    <connections>
-                        <segue destination="wPX-Ns-Ix3" kind="show" identifier="checkOut" id="rkj-ur-ZIv"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GiY-hh-Jan" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1686" y="876"/>
-        </scene>
-        <!--Check Out View Controller-->
-        <scene sceneID="CPX-dX-Iya">
-            <objects>
-                <viewController id="wPX-Ns-Ix3" customClass="CheckOutViewController" customModule="iosFoodTruckTrackR" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xau-XC-BjO"/>
-                        <viewControllerLayoutGuide type="bottom" id="9xr-jS-JfF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="T21-kX-nbk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="hGu-fy-Zn1"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="g6u-IQ-e1T"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tfn-0o-eM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2532" y="894.60269865067471"/>
+            <point key="canvasLocation" x="2605.7971014492755" y="144.64285714285714"/>
         </scene>
         <!--My Favorite Foodtrucks-->
         <scene sceneID="usy-wa-Ppu">
@@ -231,6 +154,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pFe-7W-wS6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.46659570929999999" green="0.59655499460000005" blue="0.59728795290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.083437152210000004" green="0.22229207819999999" blue="0.27718821170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
