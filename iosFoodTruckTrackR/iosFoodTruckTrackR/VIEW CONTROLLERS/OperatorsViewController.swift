@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewDelegate {
+class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var mockController: MockOperatorController! = nil
     let locationManager = CLLocationManager()
@@ -25,6 +25,13 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
         mockController = MockOperatorController()
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,6 +39,18 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
         //setUpGGBridge()
         //setUpMap()
         setupAnnotations()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let locationValue: CLLocationCoordinate2D = manager.location!.coordinate
+//        print("locations = \(locationValue.latitude)\(locationValue.longitude)")
+//        let userLocation = locations.last
+//        let viewRegion = MKCoordinateRegion(center: userLocation!.coordinate, latitudinalMeters: 600, longitudinalMeters: 600)
+//        self.mapView.setRegion(viewRegion, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {

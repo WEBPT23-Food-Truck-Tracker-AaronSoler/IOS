@@ -29,12 +29,3 @@ class FoodtruckOperator {
     
 }
 
-/*
- Field    Type    Notes
- id    integer    primary key and autoincrements
- truck_image    string    optional
- cuisine_type    string    required
- location    string    optional
- departure_time    string    optional
- operator_id    integer    required
- */
