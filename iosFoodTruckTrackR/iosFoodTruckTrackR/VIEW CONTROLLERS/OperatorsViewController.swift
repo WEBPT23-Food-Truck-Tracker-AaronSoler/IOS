@@ -42,18 +42,24 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, MKMapViewD
 
     
     func setupAnnotations() {
-        // DOGGIE DINER
-        let truck1 = CLLocationCoordinate2D(latitude: 37.735461, longitude: -122.502969)
+        
+        let truck1 = CLLocationCoordinate2D(latitude: 36.129810, longitude: -115.296100)
         let truck1Annotation = Landmark(coordinate: truck1, name: "Corndogs On The Run")
         
         let truck2 = CLLocationCoordinate2D(latitude: 37.819722, longitude: -122.478611)
         let truck2Annotation = Landmark(coordinate: truck2, name: "Worlds Best Taco Truck, Period.")
+        
+        let truck3 = CLLocationCoordinate2D(latitude: 36.144150, longitude: -115.293800)
+        let truck3Annotation = Landmark(coordinate: truck3, name: "Pho Wheelz")
+        
+        let truck4 = CLLocationCoordinate2D(latitude: 36.158900, longitude: -115.303580)
+        let truck4Annotation = Landmark(coordinate: truck4, name: "Blazing Steaks")
      
         let span = MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
         let region = MKCoordinateRegion(center: truck2, span: span)
         
         mapView.setRegion(region, animated: false)
-        mapView.showAnnotations([truck1Annotation, truck2Annotation], animated: true)
+        mapView.showAnnotations([truck1Annotation, truck2Annotation, truck3Annotation, truck4Annotation], animated: true)
     }
     //MARK: - FUNCTIONS
 
