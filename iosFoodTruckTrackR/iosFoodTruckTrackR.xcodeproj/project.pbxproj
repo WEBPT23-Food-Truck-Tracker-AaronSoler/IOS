@@ -12,6 +12,7 @@
 		7C0FACE5253BE44A00B4EE67 /* FavoriteTrucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */; };
 		7C717E4A253B59D5004F4912 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E49253B59D5004F4912 /* LoginController.swift */; };
 		7C717E4D253B7034004F4912 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C717E4C253B7034004F4912 /* LoginViewController.swift */; };
+		7C7AFF9C2561DD8100807838 /* iosFoodTruckTrackRUnitTests3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7AFF9B2561DD8100807838 /* iosFoodTruckTrackRUnitTests3.swift */; };
 		7C9A120F253EDC7500FA8556 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A120E253EDC7500FA8556 /* Landmark.swift */; };
 		7CC3552A25394006007C32AC /* FoodtruckOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552925394006007C32AC /* FoodtruckOperator.swift */; };
 		7CC3552E25394B27007C32AC /* OperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3552D25394B27007C32AC /* OperatorsViewController.swift */; };
@@ -31,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7C7AFF9E2561DD8100807838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CEC84AD25392A3500F9FB94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CEC84B425392A3500F9FB94;
+			remoteInfo = iosFoodTruckTrackR;
+		};
 		7CF921DD2546B60A00AA4D4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7CEC84AD25392A3500F9FB94 /* Project object */;
@@ -46,6 +54,9 @@
 		7C0FACE4253BE44A00B4EE67 /* FavoriteTrucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTrucksViewController.swift; sourceTree = "<group>"; };
 		7C717E49253B59D5004F4912 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7C717E4C253B7034004F4912 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C7AFF992561DD8100807838 /* iosFoodTruckTrackRUnitTests3.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosFoodTruckTrackRUnitTests3.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7AFF9B2561DD8100807838 /* iosFoodTruckTrackRUnitTests3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosFoodTruckTrackRUnitTests3.swift; sourceTree = "<group>"; };
+		7C7AFF9D2561DD8100807838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9A120E253EDC7500FA8556 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		7CC3552925394006007C32AC /* FoodtruckOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckOperator.swift; sourceTree = "<group>"; };
 		7CC3552D25394B27007C32AC /* OperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C7AFF962561DD8100807838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CEC84B225392A3500F9FB94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C7AFF9A2561DD8100807838 /* iosFoodTruckTrackRUnitTests3 */ = {
+			isa = PBXGroup;
+			children = (
+				7C7AFF9B2561DD8100807838 /* iosFoodTruckTrackRUnitTests3.swift */,
+				7C7AFF9D2561DD8100807838 /* Info.plist */,
+			);
+			path = iosFoodTruckTrackRUnitTests3;
+			sourceTree = "<group>";
+		};
 		7CC3552625393DE3007C32AC /* MODELS */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +153,7 @@
 				7CEC84D6253930DD00F9FB94 /* STORYBOARDS */,
 				7CEC84B725392A3500F9FB94 /* iosFoodTruckTrackR */,
 				7CF921D92546B60A00AA4D4D /* iosFoodTruckTrackRUITests1 */,
+				7C7AFF9A2561DD8100807838 /* iosFoodTruckTrackRUnitTests3 */,
 				7CEC84B625392A3500F9FB94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,6 +163,7 @@
 			children = (
 				7CEC84B525392A3500F9FB94 /* iosFoodTruckTrackR.app */,
 				7CF921D82546B60A00AA4D4D /* iosFoodTruckTrackRUITests1.xctest */,
+				7C7AFF992561DD8100807838 /* iosFoodTruckTrackRUnitTests3.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +213,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7C7AFF982561DD8100807838 /* iosFoodTruckTrackRUnitTests3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7AFFA22561DD8100807838 /* Build configuration list for PBXNativeTarget "iosFoodTruckTrackRUnitTests3" */;
+			buildPhases = (
+				7C7AFF952561DD8100807838 /* Sources */,
+				7C7AFF962561DD8100807838 /* Frameworks */,
+				7C7AFF972561DD8100807838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7AFF9F2561DD8100807838 /* PBXTargetDependency */,
+			);
+			name = iosFoodTruckTrackRUnitTests3;
+			productName = iosFoodTruckTrackRUnitTests3;
+			productReference = 7C7AFF992561DD8100807838 /* iosFoodTruckTrackRUnitTests3.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7CEC84B425392A3500F9FB94 /* iosFoodTruckTrackR */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CEC84C925392A3800F9FB94 /* Build configuration list for PBXNativeTarget "iosFoodTruckTrackR" */;
@@ -225,9 +272,13 @@
 		7CEC84AD25392A3500F9FB94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					7C7AFF982561DD8100807838 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7CEC84B425392A3500F9FB94;
+					};
 					7CEC84B425392A3500F9FB94 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -252,11 +303,19 @@
 			targets = (
 				7CEC84B425392A3500F9FB94 /* iosFoodTruckTrackR */,
 				7CF921D72546B60A00AA4D4D /* iosFoodTruckTrackRUITests1 */,
+				7C7AFF982561DD8100807838 /* iosFoodTruckTrackRUnitTests3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C7AFF972561DD8100807838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CEC84B325392A3500F9FB94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +338,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C7AFF952561DD8100807838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7AFF9C2561DD8100807838 /* iosFoodTruckTrackRUnitTests3.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CEC84B125392A3500F9FB94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +379,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7C7AFF9F2561DD8100807838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CEC84B425392A3500F9FB94 /* iosFoodTruckTrackR */;
+			targetProxy = 7C7AFF9E2561DD8100807838 /* PBXContainerItemProxy */;
+		};
 		7CF921DE2546B60A00AA4D4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7CEC84B425392A3500F9FB94 /* iosFoodTruckTrackR */;
@@ -347,6 +419,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7C7AFFA02561DD8100807838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S8MH4C36K;
+				INFOPLIST_FILE = iosFoodTruckTrackRUnitTests3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = B.iosFoodTruckTrackRUnitTests3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosFoodTruckTrackR.app/iosFoodTruckTrackR";
+			};
+			name = Debug;
+		};
+		7C7AFFA12561DD8100807838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S8MH4C36K;
+				INFOPLIST_FILE = iosFoodTruckTrackRUnitTests3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = B.iosFoodTruckTrackRUnitTests3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosFoodTruckTrackR.app/iosFoodTruckTrackR";
+			};
+			name = Release;
+		};
 		7CEC84C725392A3800F9FB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +658,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C7AFFA22561DD8100807838 /* Build configuration list for PBXNativeTarget "iosFoodTruckTrackRUnitTests3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7AFFA02561DD8100807838 /* Debug */,
+				7C7AFFA12561DD8100807838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7CEC84B025392A3500F9FB94 /* Build configuration list for PBXProject "iosFoodTruckTrackR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
