@@ -33,8 +33,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.backItem?.accessibilityLabel = String("loginViewController.backButton")
         //self.navigationController.navigationBar.backItem.setAccessibilityLabel("your string")
-
-        
+        passwordTextfield.isSecureTextEntry = true
+    
     }
 
     //MARK: Action Handlers

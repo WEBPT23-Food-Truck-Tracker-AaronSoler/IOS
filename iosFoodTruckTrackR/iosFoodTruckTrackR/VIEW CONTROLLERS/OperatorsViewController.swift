@@ -84,16 +84,16 @@ class OperatorsViewController: UIViewController, UITableViewDelegate, CLLocation
     func setupAnnotations() {
         
         let truck1 = CLLocationCoordinate2D(latitude: 36.129810, longitude: -115.296100)
-        let truck1Annotation = Landmark(coordinate: truck1, name: "Corndogs On The Run")
+        let truck1Annotation = Landmark(coordinate: truck1, name: "Corndogs On The Run", cuisine: "Cuisine: American, Carnival")
         
         let truck2 = CLLocationCoordinate2D(latitude: 37.819722, longitude: -122.478611)
-        let truck2Annotation = Landmark(coordinate: truck2, name: "Worlds Best Taco Truck, Period.")
+        let truck2Annotation = Landmark(coordinate: truck2, name: "Worlds Best Taco Truck, Period.", cuisine: "Cuisine: Tacos")
         
         let truck3 = CLLocationCoordinate2D(latitude: 36.144150, longitude: -115.293800)
-        let truck3Annotation = Landmark(coordinate: truck3, name: "Pho Wheelz")
+        let truck3Annotation = Landmark(coordinate: truck3, name: "Pho Wheelz", cuisine: "Cuisine: Asian")
         
         let truck4 = CLLocationCoordinate2D(latitude: 36.158900, longitude: -115.303580)
-        let truck4Annotation = Landmark(coordinate: truck4, name: "Blazing Steak Truck")
+        let truck4Annotation = Landmark(coordinate: truck4, name: "Blazing Steak Truck", cuisine: "Cuisine: BBQ")
      
         let span = MKCoordinateSpan(latitudeDelta: 30, longitudeDelta: 30)
         let region = MKCoordinateRegion(center: truck2, span: span)

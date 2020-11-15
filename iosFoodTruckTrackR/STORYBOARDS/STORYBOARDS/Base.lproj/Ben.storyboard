@@ -36,6 +36,7 @@
                     <navigationItem key="navigationItem" title="My Favorite Foodtrucks" id="zcf-SS-v9k"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mapView" destination="rXp-HK-4nQ" id="gi5-GK-t9O"/>
                         <segue destination="kW2-i2-ZLg" kind="show" identifier="loginsegue" id="OMI-Z8-jeV"/>
                     </connections>
                 </viewController>
